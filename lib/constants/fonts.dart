@@ -32,7 +32,19 @@ class AppFonts {
   }) {
     return GoogleFonts.lato(
       color: fontColor,
-      fontSize: 22,
+      fontSize: 24,
+      fontWeight: fontWeight,
+    );
+  }
+
+  //Headings
+  static TextStyle subHeadingFont({
+    Color fontColor = AppColors.negativeColor,
+    FontWeight fontWeight = FontWeight.bold,
+  }) {
+    return GoogleFonts.lato(
+      color: fontColor,
+      fontSize: 16,
       fontWeight: fontWeight,
     );
   }

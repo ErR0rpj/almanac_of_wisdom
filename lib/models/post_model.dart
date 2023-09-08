@@ -7,18 +7,11 @@ class PostModel {
   String? category;
   //Image which is shown on feed.
   String? imageURL;
+  //TOOD: Create search key words
+  String? searchKeywords;
 
   //Link from where we can read the full article or most parts of it.
   String? externalLink;
-  //This is mainly used to see if the position of the content is intact. Meaning
-  //When the content of the post is loaded, we are not sure where to put which
-  //part of the content. So, position is given inside the content to determine it.
-  //Along with position, the ID of the content also resembles the postion. But
-  //if the position vairable is changed, the id cannot be changed. So, the below
-  //variable determines that. If its true means content id and position are same
-  //otherwise, they might be different.
-  bool isContentPositionIntact = true;
-  int contentCount = 0;
 
   //The number of users who saved this post
   int saveCount = 0;
@@ -37,6 +30,8 @@ class PostModel {
   String? publisherId;
   //The date on which post was pusblished
   DateTime? publishDate;
+  //Profile image for publisher
+  String? publisherProfileImage;
   //Document ID of next recommended chapter/topic. Related to this
   String? nextRecommendedPost;
   //Recommended Posts
@@ -47,9 +42,8 @@ class PostModel {
     this.title,
     this.category,
     this.imageURL,
+    this.searchKeywords,
     this.externalLink,
-    this.isContentPositionIntact = true,
-    this.contentCount = 0,
     this.saveCount = 0,
     this.views = 0,
     this.sharesCount = 0,
@@ -58,7 +52,11 @@ class PostModel {
     this.publisherName,
     this.publisherId,
     this.publishDate,
+    this.publisherProfileImage,
     this.nextRecommendedPost,
     this.recommendedPost,
-  });
+  }) {
+    //TODO: Set default image in the UI end
+    //TODO: if image is null then assign a default according to the category
+  }
 }
