@@ -11,9 +11,9 @@ dependencies:
     sdk: flutter
 
   animated_text_kit: ^4.2.2
-  # carousel_slider: ^4.2.1
   cupertino_icons: ^1.0.2
   iconly: ^1.0.1
+  intl: ^0.18.1
   google_fonts: ^5.1.0
   cached_network_image: ^3.2.3
 

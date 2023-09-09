@@ -31,7 +31,7 @@ class PostModel {
   //The date on which post was pusblished
   DateTime? publishDate;
   //Profile image for publisher
-  String? publisherProfileImage;
+  String? publisherProfileImageURL;
   //Document ID of next recommended chapter/topic. Related to this
   String? nextRecommendedPost;
   //Recommended Posts
@@ -52,7 +52,7 @@ class PostModel {
     this.publisherName,
     this.publisherId,
     this.publishDate,
-    this.publisherProfileImage,
+    this.publisherProfileImageURL,
     this.nextRecommendedPost,
     this.recommendedPost,
   }) {

@@ -84,7 +84,7 @@ class _HomePage extends State<HomePage> {
               const SizedBox(height: 25),
               Row(
                 children: [
-                  Icon(IconlyLight.search),
+                  const Icon(IconlyLight.search),
                   const SizedBox(width: 10),
                   Expanded(
                     child: Container(
