@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:almanac_of_wisdom/constants/colors.dart';
 import 'package:almanac_of_wisdom/constants/fonts.dart';
 import 'package:almanac_of_wisdom/models/post_model.dart';
@@ -7,6 +9,15 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 
 class CustomWidget {
+  static Widget _placeholderImageForProfilePicture(String letter) {
+    return Text(
+      letter,
+      style: GoogleFonts.lato(
+        color: AppColors.primaryColor,
+      ),
+    );
+  }
+
   //Used in home page list
   static Widget postListTile(PostModel postModel) {
     return ListTile(
@@ -28,22 +39,33 @@ class CustomWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           CircleAvatar(
-            radius: 12,
+            radius: 15,
             backgroundColor: AppColors.negativeColor,
             child: postModel.publisherProfileImageURL == null
-                ? Text(
-                    postModel.publisherName![0],
-                    style: GoogleFonts.lato(
-                      color: AppColors.primaryColor,
+                ? _placeholderImageForProfilePicture(
+                    postModel.publisherName![0])
+                : ClipOval(
+                    child: CachedNetworkImage(
+                      fit: BoxFit.contain,
+                      imageUrl: postModel.publisherProfileImageURL!,
+                      placeholder: (context, url) {
+                        return _placeholderImageForProfilePicture(
+                            postModel.publisherName![0]);
+                      },
+                      errorWidget: (context, url, dynamic) {
+                        //TODO: LOG error
+                        return _placeholderImageForProfilePicture(
+                            postModel.publisherName![0]);
+                      },
                     ),
-                  )
-                : CachedNetworkImage(
-                    imageUrl: postModel.publisherProfileImageURL!),
+                  ),
           ),
           const SizedBox(width: 6),
-          Text(
-            postModel.publisherName!,
-            style: AppFonts.subtitleFont(fontColor: AppColors.negativeColor),
+          Flexible(
+            child: Text(
+              postModel.publisherName!,
+              style: AppFonts.subtitleFont(fontColor: AppColors.negativeColor),
+            ),
           ),
           const SizedBox(width: 7),
           const CircleAvatar(
@@ -51,19 +73,30 @@ class CustomWidget {
             backgroundColor: AppColors.tertiaryColor,
           ),
           const SizedBox(width: 7),
-          Text(
-            '${postModel.publishDate?.day} ${DateFormat('MMM').format(postModel.publishDate!)}, ${postModel.publishDate?.year}',
-            style: AppFonts.subtitleFont(),
+          Flexible(
+            child: Text(
+              '${postModel.publishDate?.day} ${DateFormat('MMM').format(postModel.publishDate!)}, ${postModel.publishDate?.year}',
+              style: AppFonts.subtitleFont(),
+            ),
           ),
         ],
       ),
       trailing: ClipRRect(
         borderRadius: BorderRadius.circular(10),
-        child: Image.asset(
-          postModel.imageURL!,
+        child: CachedNetworkImage(
+          imageUrl: postModel.imageURL!,
           fit: BoxFit.cover,
-          height: 200,
+          height: 150,
           width: 100,
+          errorWidget: (context, url, error) {
+            //TODO: LOG error
+            return Image.asset(
+              'images/${Random().nextInt(8)}.jpg',
+              fit: BoxFit.cover,
+              height: 90,
+              width: 90,
+            );
+          },
         ),
       ),
     );

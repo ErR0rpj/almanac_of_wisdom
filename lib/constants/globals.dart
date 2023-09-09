@@ -11,6 +11,8 @@ class Globals {
           'https://www.navalmanack.com/almanack-of-naval-ravikant/understanding-how-wealth-is-created',
       publisherName: 'Eric Jorgenson',
       publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
@@ -22,6 +24,8 @@ class Globals {
           'https://www.navalmanack.com/almanack-of-naval-ravikant/find-and-build-specific-knowledge',
       publisherName: 'Eric Jorgenson',
       publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://i0.wp.com/perell.com/wp-content/uploads/2020/12/Eric-Jorgenson.jpg?fit=1365%2C1365&ssl=1",
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
