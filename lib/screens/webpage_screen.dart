@@ -22,7 +22,7 @@ class _WebpageState extends State<Webpage> {
       mediaPlaybackRequiresUserGesture: false,
     ),
     android: AndroidInAppWebViewOptions(
-      useHybridComposition: true,
+      useHybridComposition: false,
     ),
   );
 
