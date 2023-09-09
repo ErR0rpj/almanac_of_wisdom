@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:almanac_of_wisdom/constants/colors.dart';
 import 'package:almanac_of_wisdom/constants/fonts.dart';
 import 'package:almanac_of_wisdom/models/post_model.dart';
+import 'package:almanac_of_wisdom/screens/webpage_screen.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -19,8 +20,15 @@ class CustomWidget {
   }
 
   //Used in home page list
-  static Widget postListTile(PostModel postModel) {
+  static Widget postListTile(PostModel postModel, BuildContext context) {
     return ListTile(
+      onTap: () {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => Webpage(webpageURL: postModel.externalURL!),
+          ),
+        );
+      },
       contentPadding: const EdgeInsets.all(10),
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

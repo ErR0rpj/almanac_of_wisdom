@@ -7,7 +7,7 @@ class Globals {
       title: 'Understand how wealth is created',
       category: 'Wealth',
       imageURL: 'images/wealth.jpg',
-      externalLink:
+      externalURL:
           'https://www.navalmanack.com/almanack-of-naval-ravikant/understanding-how-wealth-is-created',
       publisherName: 'Eric Jorgenson',
       publisherId: 'Eric-Jorgenson',
@@ -20,7 +20,7 @@ class Globals {
       title: 'Find and build specific knowledge',
       category: 'Wealth',
       imageURL: 'images/car.jpg',
-      externalLink:
+      externalURL:
           'https://www.navalmanack.com/almanack-of-naval-ravikant/find-and-build-specific-knowledge',
       publisherName: 'Eric Jorgenson',
       publisherId: 'Eric-Jorgenson',
@@ -33,7 +33,7 @@ class Globals {
       title: 'Play long term games with long term people',
       category: 'Wealth',
       imageURL: 'images/harmon.png',
-      externalLink:
+      externalURL:
           'https://www.navalmanack.com/almanack-of-naval-ravikant/play-long-term-games-with-long-term-people',
       publisherName: 'Eric Jorgenson',
       publisherId: 'Eric-Jorgenson',
@@ -44,7 +44,7 @@ class Globals {
       title: 'Understand how wealth is created',
       category: 'Wealth',
       imageURL: 'images/wealth.jpg',
-      externalLink:
+      externalURL:
           'https://www.navalmanack.com/almanack-of-naval-ravikant/understanding-how-wealth-is-created',
       publisherName: 'Eric Jorgenson',
       publisherId: 'Eric-Jorgenson',
@@ -55,7 +55,7 @@ class Globals {
       title: 'Find and build specific knowledge',
       category: 'Wealth',
       imageURL: 'images/car.jpg',
-      externalLink:
+      externalURL:
           'https://www.navalmanack.com/almanack-of-naval-ravikant/find-and-build-specific-knowledge',
       publisherName: 'Eric Jorgenson',
       publisherId: 'Eric-Jorgenson',
@@ -66,7 +66,7 @@ class Globals {
       title: 'Play long term games with long term people',
       category: 'Wealth',
       imageURL: 'images/harmon.png',
-      externalLink:
+      externalURL:
           'https://www.navalmanack.com/almanack-of-naval-ravikant/play-long-term-games-with-long-term-people',
       publisherName: 'Eric Jorgenson',
       publisherId: 'Eric-Jorgenson',

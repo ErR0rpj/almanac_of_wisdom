@@ -11,7 +11,7 @@ class PostModel {
   String? searchKeywords;
 
   //Link from where we can read the full article or most parts of it.
-  String? externalLink;
+  String? externalURL;
 
   //The number of users who saved this post
   int saveCount = 0;
@@ -43,7 +43,7 @@ class PostModel {
     this.category,
     this.imageURL,
     this.searchKeywords,
-    this.externalLink,
+    this.externalURL,
     this.saveCount = 0,
     this.views = 0,
     this.sharesCount = 0,

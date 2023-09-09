@@ -11,11 +11,13 @@ dependencies:
     sdk: flutter
 
   animated_text_kit: ^4.2.2
+  cached_network_image: ^3.2.3
   cupertino_icons: ^1.0.2
+  flutter_inappwebview: ^5.7.2+3
   iconly: ^1.0.1
   intl: ^0.18.1
   google_fonts: ^5.1.0
-  cached_network_image: ^3.2.3
+  url_launcher: ^6.1.14
 
 dev_dependencies:
   flutter_test:

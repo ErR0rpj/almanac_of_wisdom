@@ -120,7 +120,8 @@ class _HomePage extends State<HomePage> {
                 physics: const NeverScrollableScrollPhysics(),
                 itemCount: Globals.allPostsList.length,
                 itemBuilder: (context, index) {
-                  return CustomWidget.postListTile(Globals.allPostsList[index]);
+                  return CustomWidget.postListTile(
+                      Globals.allPostsList[index], context);
                 },
                 separatorBuilder: (context, index) {
                   return const Divider(
