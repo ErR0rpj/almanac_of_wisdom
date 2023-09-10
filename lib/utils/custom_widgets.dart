@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:almanac_of_wisdom/constants/colors.dart';
 import 'package:almanac_of_wisdom/constants/fonts.dart';
 import 'package:almanac_of_wisdom/models/post_model.dart';
@@ -97,12 +95,7 @@ class CustomWidget {
           width: 100,
           errorWidget: (context, url, error) {
             //TODO: LOG error
-            return Image.asset(
-              'images/${Random().nextInt(8)}.jpg',
-              fit: BoxFit.cover,
-              height: 90,
-              width: 90,
-            );
+            return postModel.imageErrorWidget;
           },
         ),
       ),
