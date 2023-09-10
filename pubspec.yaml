@@ -17,6 +17,7 @@ dependencies:
   iconly: ^1.0.1
   intl: ^0.18.1
   google_fonts: ^5.1.0
+  sortedmap: ^0.5.3
   url_launcher: ^6.1.14
 
 dev_dependencies:

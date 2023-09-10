@@ -1,3 +1,4 @@
+
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -6,13 +7,13 @@ class PostModel {
   //TBD how to create this uniquely.
   final String postId;
   //Title of the post. Shown in feed
-  String? title;
+  final String title;
   //Categories: Wealth, Judgement, Happiness, self-enlightenment, philosophy, others
-  String? category;
+  final String category;
   //Image which is shown on feed.
   String? imageURL;
   //TOOD: Create search key words
-  String? searchKeywords;
+  String searchKeywords;
 
   //Link from where we can read the full article or most parts of it.
   String? externalURL;
@@ -29,11 +30,11 @@ class PostModel {
   int averageTimeSpent = 0;
 
   //Author/Publisher name
-  String? publisherName;
+  final String publisherName;
   //The user id of the publisher
-  String? publisherId;
+  final String publisherId;
   //The date on which post was pusblished
-  DateTime? publishDate;
+  final DateTime publishDate;
   //Profile image for publisher
   String? publisherProfileImageURL;
   //Document ID of next recommended chapter/topic. Related to this
@@ -41,25 +42,26 @@ class PostModel {
   //Recommended Posts
   List<String>? recommendedPost;
 
+
   //Local vairables
   //Used for placeholder image of this post
   late Widget imageErrorWidget;
 
   PostModel({
     required this.postId,
-    this.title,
-    this.category,
+    required this.title,
+    required this.category,
     this.imageURL,
-    this.searchKeywords,
+    this.searchKeywords = '',
     this.externalURL,
     this.saveCount = 0,
     this.views = 0,
     this.sharesCount = 0,
     this.totalTimeSpent = 0,
     this.averageTimeSpent = 0,
-    this.publisherName,
-    this.publisherId,
-    this.publishDate,
+    required this.publisherName,
+    required this.publisherId,
+    required this.publishDate,
     this.publisherProfileImageURL,
     this.nextRecommendedPost,
     this.recommendedPost,
@@ -67,6 +69,14 @@ class PostModel {
     //TODO: Set default image in the UI end
     //TODO: if image is null then assign a default according to the category
     assignImageErrorWidget();
+    _buildSearchKeywords();
+  }
+
+  //Builds the common search keywords.
+  void _buildSearchKeywords() {
+    searchKeywords += '$title $category $publisherName ${publishDate.year}';
+    searchKeywords = searchKeywords.toLowerCase();
+    debugPrint('$title: $searchKeywords');
   }
 
   //Assigns a random asset image which is shown in case of error.
