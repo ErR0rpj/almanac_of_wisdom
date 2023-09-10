@@ -48,6 +48,7 @@ class _HomePage extends State<HomePage> {
         searchedItemsList: _visibleItems,
       ).basicSearch();
     } else {
+      _visibleItems.clear();
       for (int i = 0; i < Globals.allPostsList.length; i++) {
         _visibleItems.add(Globals.allPostsList[i]);
       }
@@ -145,7 +146,7 @@ class _HomePage extends State<HomePage> {
                           ),
                           color: Color.fromARGB(222, 245, 245, 249),
                         ),
-                        margin: const EdgeInsets.only(right: 20),
+                        margin: const EdgeInsets.only(right: 10),
                         padding: const EdgeInsets.only(
                             left: 16, right: 14, top: 18, bottom: 10),
                         child: TextField(
@@ -168,6 +169,19 @@ class _HomePage extends State<HomePage> {
                             );
                           },
                         ),
+                      ),
+                    ),
+                    Visibility(
+                      visible: _searchTextEditingController.text.isEmpty
+                          ? false
+                          : true,
+                      child: InkWell(
+                        onTap: () {
+                          _searchTextEditingController.text = '';
+                          FocusScope.of(context).requestFocus(FocusNode());
+                          _fetchPosts();
+                        },
+                        child: const Icon(IconlyLight.close_square),
                       ),
                     ),
                   ],
