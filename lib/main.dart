@@ -1,10 +1,11 @@
 import 'dart:io';
-
 import 'package:almanac_of_wisdom/constants/colors.dart';
+import 'package:almanac_of_wisdom/firebase_options.dart';
 import 'package:almanac_of_wisdom/screens/category_page.dart';
 import 'package:almanac_of_wisdom/screens/home_page.dart';
 import 'package:almanac_of_wisdom/screens/profile_page.dart';
 import 'package:almanac_of_wisdom/screens/saved_page.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -12,6 +13,11 @@ import 'package:iconly/iconly.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  //FIrebase initialize
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
   //This is for Web view
   if (Platform.isAndroid) {

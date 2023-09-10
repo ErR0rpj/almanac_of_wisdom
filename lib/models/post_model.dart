@@ -74,7 +74,6 @@ class PostModel {
   void _buildSearchKeywords() {
     searchKeywords += '$title $category $publisherName ${publishDate.year}';
     searchKeywords = searchKeywords.toLowerCase();
-    debugPrint('$title: $searchKeywords');
   }
 
   //Assigns a random asset image which is shown in case of error.
