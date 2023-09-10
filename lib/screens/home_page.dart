@@ -19,6 +19,7 @@ class _HomePage extends State<HomePage> {
   //Used in animation of text moving in subtitle
   final double _transitionHeight = 20;
 
+  //List containing the items which are visible on screen
   final List<PostModel> _visibleItems = [];
 
   //Search related variables
@@ -193,7 +194,7 @@ class _HomePage extends State<HomePage> {
                         itemCount: _visibleItems.length,
                         itemBuilder: (context, index) {
                           return CustomWidget.postListTile(
-                             _visibleItems[index], context);
+                              _visibleItems[index], context);
                         },
                         separatorBuilder: (context, index) {
                           return const Divider(

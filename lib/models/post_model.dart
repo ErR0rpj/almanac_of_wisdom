@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class PostModel {
   //TBD how to create this uniquely.
   final String postId;
@@ -67,6 +65,5 @@ class PostModel {
   void _buildSearchKeywords() {
     searchKeywords += '$title $category $publisherName ${publishDate.year}';
     searchKeywords = searchKeywords.toLowerCase();
-    debugPrint('$title: $searchKeywords');
   }
 }
