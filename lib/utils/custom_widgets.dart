@@ -97,12 +97,14 @@ class CustomWidget {
           width: 100,
           errorWidget: (context, url, error) {
             //TODO: LOG error
-            return Image.asset(
-              'images/${Random().nextInt(8)}.jpg',
-              fit: BoxFit.cover,
-              height: 90,
-              width: 90,
-            );
+            return postModel.imageErrorWidget != null
+                ? postModel.imageErrorWidget!
+                : Image.asset(
+                    'images/${Random().nextInt(8)}.jpg',
+                    fit: BoxFit.cover,
+                    height: 90,
+                    width: 90,
+                  );
           },
         ),
       ),

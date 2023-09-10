@@ -1,3 +1,7 @@
+import 'dart:math';
+
+import 'package:flutter/material.dart';
+
 class PostModel {
   //TBD how to create this uniquely.
   final String postId;
@@ -37,7 +41,9 @@ class PostModel {
   //Recommended Posts
   List<String>? recommendedPost;
 
-  //Only used locally for showing an image if URL is not available.
+  //Local vairables
+  //Used for placeholder image of this post
+  Widget? imageErrorWidget;
 
   PostModel({
     required this.postId,
@@ -58,6 +64,9 @@ class PostModel {
     this.nextRecommendedPost,
     this.recommendedPost,
   }) {
+    //TODO: Set default image in the UI end
+    //TODO: if image is null then assign a default according to the category
+    assignImageErrorWidget();
     _buildSearchKeywords();
   }
 
@@ -65,5 +74,15 @@ class PostModel {
   void _buildSearchKeywords() {
     searchKeywords += '$title $category $publisherName ${publishDate.year}';
     searchKeywords = searchKeywords.toLowerCase();
+  }
+
+  //Assigns a random asset image which is shown in case of error.
+  void assignImageErrorWidget() async {
+    imageErrorWidget = Image.asset(
+      'images/${Random().nextInt(8)}.jpg',
+      fit: BoxFit.cover,
+      height: 90,
+      width: 90,
+    );
   }
 }
