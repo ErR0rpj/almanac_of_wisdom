@@ -1,4 +1,3 @@
-
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -42,10 +41,9 @@ class PostModel {
   //Recommended Posts
   List<String>? recommendedPost;
 
-
   //Local vairables
   //Used for placeholder image of this post
-  late Widget imageErrorWidget;
+  Widget? imageErrorWidget;
 
   PostModel({
     required this.postId,
