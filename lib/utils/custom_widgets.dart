@@ -34,11 +34,11 @@ class CustomWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            postModel.category!,
+            postModel.category,
             style: AppFonts.subtitleFont(),
           ),
           Text(
-            postModel.title!,
+            postModel.title,
             style: AppFonts.subHeadingFont(),
           ),
         ],
@@ -50,20 +50,19 @@ class CustomWidget {
             radius: 15,
             backgroundColor: AppColors.negativeColor,
             child: postModel.publisherProfileImageURL == null
-                ? _placeholderImageForProfilePicture(
-                    postModel.publisherName![0])
+                ? _placeholderImageForProfilePicture(postModel.publisherName[0])
                 : ClipOval(
                     child: CachedNetworkImage(
                       fit: BoxFit.contain,
                       imageUrl: postModel.publisherProfileImageURL!,
                       placeholder: (context, url) {
                         return _placeholderImageForProfilePicture(
-                            postModel.publisherName![0]);
+                            postModel.publisherName[0]);
                       },
                       errorWidget: (context, url, dynamic) {
                         //TODO: LOG error
                         return _placeholderImageForProfilePicture(
-                            postModel.publisherName![0]);
+                            postModel.publisherName[0]);
                       },
                     ),
                   ),
@@ -71,7 +70,7 @@ class CustomWidget {
           const SizedBox(width: 6),
           Flexible(
             child: Text(
-              postModel.publisherName!,
+              postModel.publisherName,
               style: AppFonts.subtitleFont(fontColor: AppColors.negativeColor),
             ),
           ),
@@ -83,7 +82,7 @@ class CustomWidget {
           const SizedBox(width: 7),
           Flexible(
             child: Text(
-              '${postModel.publishDate?.day} ${DateFormat('MMM').format(postModel.publishDate!)}, ${postModel.publishDate?.year}',
+              '${postModel.publishDate.day} ${DateFormat('MMM').format(postModel.publishDate)}, ${postModel.publishDate.year}',
               style: AppFonts.subtitleFont(),
             ),
           ),
