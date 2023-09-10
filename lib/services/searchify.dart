@@ -2,7 +2,6 @@
 //TODO: Optimise this
 import 'package:almanac_of_wisdom/models/post_model.dart';
 import 'package:almanac_of_wisdom/services/string_manipulation.dart';
-import 'package:flutter/material.dart';
 import 'package:sortedmap/sortedmap.dart';
 
 class Searchify {
@@ -53,9 +52,7 @@ class Searchify {
 
       _map.forEach((key, value) {
         int keyInt = int.parse(key.toString());
-        debugPrint('${allItemsList[keyInt].title} added');
         searchedItemsList.insert(0, allItemsList[keyInt]);
-        debugPrint('${searchedItemsList[0].title} added at position 0');
       });
     }
   }
