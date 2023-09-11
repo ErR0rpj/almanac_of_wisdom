@@ -5,17 +5,21 @@ import 'package:almanac_of_wisdom/models/post_model.dart';
 import 'package:almanac_of_wisdom/services/searchify.dart';
 import 'package:almanac_of_wisdom/utils/custom_widgets.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  const HomePage(this.observer, {super.key});
+
+  final FirebaseAnalyticsObserver observer;
 
   @override
   State<HomePage> createState() => _HomePage();
 }
 
-class _HomePage extends State<HomePage> {
+class _HomePage extends State<HomePage>
+    with SingleTickerProviderStateMixin, RouteAware {
   //Used in animation of text moving in subtitle
   final double _transitionHeight = 20;
 
@@ -33,6 +37,13 @@ class _HomePage extends State<HomePage> {
   void initState() {
     super.initState();
     _fetchPosts();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    //For storing the page opening in firebase analytics
+    widget.observer.subscribe(this, ModalRoute.of(context)! as PageRoute);
   }
 
   //Here 2nd variable determines whether the user is searching within the list or
@@ -63,6 +74,7 @@ class _HomePage extends State<HomePage> {
   @override
   void dispose() {
     _searchTextEditingController.clear();
+    widget.observer.unsubscribe(this);
     super.dispose();
   }
 
@@ -209,7 +221,7 @@ class _HomePage extends State<HomePage> {
                             physics: const NeverScrollableScrollPhysics(),
                             itemCount: _visibleItems.length,
                             itemBuilder: (context, index) {
-                              return CustomWidget.postListTile(
+                              return CustomWidget.postListTile(widget.observer,
                                   _visibleItems[index], context);
                             },
                             separatorBuilder: (context, index) {
