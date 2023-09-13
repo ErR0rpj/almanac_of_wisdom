@@ -9,8 +9,6 @@ import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:iconly/iconly.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -59,7 +57,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _currentBottomNavigationIndex = 0;
+  final int _currentBottomNavigationIndex = 0;
 
   List<Widget> _bottomNavigationPage() {
     return [
@@ -74,47 +72,49 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _bottomNavigationPage()[_currentBottomNavigationIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentBottomNavigationIndex,
-        showSelectedLabels: true,
-        showUnselectedLabels: false,
-        selectedItemColor: AppColors.secondaryColor,
-        unselectedItemColor: AppColors.tertiaryColor,
-        selectedLabelStyle: GoogleFonts.lato(),
-        unselectedLabelStyle: GoogleFonts.lato(),
-        elevation: 10,
-        onTap: (index) {
-          setState(() {
-            _currentBottomNavigationIndex = index;
-          });
-        },
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(
-              IconlyLight.home,
-            ),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              IconlyLight.category,
-            ),
-            label: 'Categories',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              IconlyLight.bookmark,
-            ),
-            label: 'Saved',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              IconlyLight.profile,
-            ),
-            label: 'Profile',
-          ),
-        ],
-      ),
+      //Commented bottom navigation for v1.0.0.
+      // body: _bottomNavigationPage[_currentBottomNavigationIndex],
+      // bottomNavigationBar: BottomNavigationBar(
+      //   currentIndex: _currentBottomNavigationIndex,
+      //   showSelectedLabels: true,
+      //   showUnselectedLabels: false,
+      //   selectedItemColor: AppColors.secondaryColor,
+      //   unselectedItemColor: AppColors.tertiaryColor,
+      //   selectedLabelStyle: GoogleFonts.lato(),
+      //   unselectedLabelStyle: GoogleFonts.lato(),
+      //   elevation: 10,
+      //   onTap: (index) {
+      //     setState(() {
+      //       _currentBottomNavigationIndex = index;
+      //     });
+      //   },
+      //   items: const [
+      //     BottomNavigationBarItem(
+      //       icon: Icon(
+      //         IconlyLight.home,
+      //       ),
+      //       label: 'Home',
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(
+      //         IconlyLight.category,
+      //       ),
+      //       label: 'Categories',
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(
+      //         IconlyLight.bookmark,
+      //       ),
+      //       label: 'Saved',
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(
+      //         IconlyLight.profile,
+      //       ),
+      //       label: 'Profile',
+      //     ),
+      //   ],
+      // ),
     );
   }
 }
