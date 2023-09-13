@@ -72,7 +72,8 @@ class PostModel {
 
   //Builds the common search keywords.
   void _buildSearchKeywords() {
-    searchKeywords += '$title $category $publisherName ${publishDate.year}';
+    searchKeywords +=
+        '$title $category $publisherName $publisherId ${publishDate.year}';
     searchKeywords = searchKeywords.toLowerCase();
   }
 

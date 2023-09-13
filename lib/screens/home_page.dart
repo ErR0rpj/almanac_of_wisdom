@@ -65,6 +65,7 @@ class _HomePage extends State<HomePage>
         _visibleItems.add(Globals.allPostsList[i]);
       }
     }
+    _visibleItems.shuffle();
 
     setState(() {
       _showProgress = false;
