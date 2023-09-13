@@ -13,14 +13,14 @@ dependencies:
   animated_text_kit: ^4.2.2
   cached_network_image: ^3.2.3
   cupertino_icons: ^1.0.2
+  firebase_core: ^2.15.1
+  firebase_analytics: ^10.4.5
   flutter_inappwebview: ^5.7.2+3
   iconly: ^1.0.1
   intl: ^0.18.1
   google_fonts: ^5.1.0
   sortedmap: ^0.5.3
   url_launcher: ^6.1.14
-  firebase_core: ^2.15.1
-  firebase_analytics: ^10.4.5
 
 dev_dependencies:
   flutter_test:
