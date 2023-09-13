@@ -1,18 +1,22 @@
 import 'dart:io';
 import 'package:almanac_of_wisdom/constants/colors.dart';
+import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:iconly/iconly.dart';
 
 class Webpage extends StatefulWidget {
   final String webpageURL;
-  const Webpage({super.key, required this.webpageURL});
+  final FirebaseAnalyticsObserver observer;
+
+  const Webpage(this.observer, {super.key, required this.webpageURL});
 
   @override
   State<Webpage> createState() => _WebpageState();
 }
 
-class _WebpageState extends State<Webpage> {
+class _WebpageState extends State<Webpage>
+    with SingleTickerProviderStateMixin, RouteAware {
   final GlobalKey _webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
@@ -46,7 +50,15 @@ class _WebpageState extends State<Webpage> {
   }
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    //For storing the page opening in firebase analytics
+    widget.observer.subscribe(this, ModalRoute.of(context)! as PageRoute);
+  }
+
+  @override
   void dispose() {
+    widget.observer.unsubscribe(this);
     super.dispose();
   }
 
