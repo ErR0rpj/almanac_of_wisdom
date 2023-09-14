@@ -672,7 +672,7 @@ class Globals {
       publishDate: DateTime(2017, 12, 12),
     ),
 
-    //Marc anderseen
+    //Pmarca
     PostModel(
       postId: 'marc1',
       title: 'Why not to do a startup',
@@ -680,6 +680,307 @@ class Globals {
       imageURL:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png',
       externalURL: 'https://pmarchive.com/guide_to_startups_part1.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc2',
+      title: 'When the VCs say “no”',
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/guide_to_startups_part2.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc3',
+      title: "But I don't know any VCs!",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/guide_to_startups_part3.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc4',
+      title: "The only thing that matters",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/guide_to_startups_part4.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc5',
+      title: "The Moby Dick theory of big companies",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/guide_to_startups_part5.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc6',
+      title: "How much funding is too little? Too much?",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/guide_to_startups_part6.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc7',
+      title: "Why a startup's initial business plan doesn't matter that much",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/guide_to_startups_part7.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc8',
+      title: "Hiring, managing, promoting, and firing executives",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/guide_to_startups_part8.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc9',
+      title: "How to hire a professional CEO",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/guide_to_startups_part9.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc10',
+      title: "Part 1: The truth about venture capitalists",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/truth_about_vcs_part1.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc11',
+      title: "Part 2: The truth about venture capitalists",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/truth_about_vcs_part2.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc12',
+      title: "Part 3: The truth about venture capitalists",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/truth_about_vcs_part3.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc13',
+      title: "How to hire the best people you've ever worked with",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/how_to_hire_the_best_people.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc14',
+      title: "Serial entrepreneurs and today's Silicon Valley",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL:
+          'https://pmarchive.com/serial_entrepreneurs_and_todays_silicon_valley.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc15',
+      title: "The Psychology of Entrepreneurial Misjudgment: Biases 1-6",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL:
+          'https://pmarchive.com/psychology_of_entrepreneurial_misjudgment.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc16',
+      title: "Age and the Entrepreneur: Some data",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/age_and_the_entrepreneur.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc17',
+      title: "Luck and the Entrepreneur: The four kinds of luck",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/luck_and_the_entrepreneur.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc18',
+      title: "Pmarca Guide to Personal Productivity",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/guide_to_personal_productivity.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc19',
+      title: "Pmarca Guide to Career Planning: Introduction",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/guide_to_career_planning_part0.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc20',
+      title: "Pmarca Guide to Career Planning: Opportunity",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/guide_to_career_planning_part1.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc21',
+      title: "Pmarca Guide to Career Planning: Skills and education",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/guide_to_career_planning_part2.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc22',
+      title: "Pmarca Guide to Career Planning: Where to go and why",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/guide_to_career_planning_part3.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc23',
+      title: "Guide to Big Companies: Turnaround!",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/guide_to_big_companies_part1.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'marc21',
+      title: "Guide to Big Companies: Retaining great people",
+      category: 'Business',
+      imageURL:
+          'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
+      externalURL: 'https://pmarchive.com/guide_to_career_planning_part3.html',
       publisherName: 'Pmarca',
       publisherId: 'Marc-Andreessen',
       publisherProfileImageURL:
