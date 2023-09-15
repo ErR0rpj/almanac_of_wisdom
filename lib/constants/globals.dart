@@ -1,6 +1,9 @@
 import 'package:almanac_of_wisdom/models/post_model.dart';
 
 class Globals {
+  static String privacyPolicyURL =
+      "https://stavancoj.wixsite.com/almanac-of-wisdom/privacy-policy";
+
   static List<PostModel> allPostsList = [
     //Navalmanack
     PostModel(
