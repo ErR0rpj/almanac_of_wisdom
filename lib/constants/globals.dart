@@ -156,6 +156,356 @@ class Globals {
           "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
       publishDate: DateTime(2023, 9, 24),
     ),
+    PostModel(
+      postId: 'ej12',
+      title: 'Building judgment',
+      category: 'Growth',
+      imageURL:
+          'https://t3.ftcdn.net/jpg/04/86/36/64/240_F_486366405_noZdxkmgs12lIkxydkIv57aTMfAb5sfe.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/judgment',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej13',
+      title: 'How to think clearly',
+      category: 'Growth',
+      imageURL:
+          'https://images.squarespace-cdn.com/content/v1/5beb0a44f2e6b1113f9519d9/1645376757703-6VJOZDFDGALAZXL8APKA/Crystal+clear+water.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/how-to-think-clearly',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej14',
+      title: 'Shed your identity to see reality',
+      category: 'Growth',
+      imageURL:
+          'https://t3.ftcdn.net/jpg/02/70/53/78/240_F_270537879_zZSYyCuhADNfqtS9jXo1XbDRPhr5rDsh.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/shed-your-identity-to-see-reality',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej15',
+      title: 'Learn the skills of decision-making',
+      category: 'Growth',
+      imageURL:
+          'https://readytrainingonline.com/wp-content/uploads/2021/06/06-28-21-Decision-Making-with-Empathy.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/learn-the-skills-of-decision-making',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej16',
+      title: 'Collect mental models',
+      category: 'Growth',
+      imageURL:
+          'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/5cdff688726739.5dded26f1a292.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/collect-mental-models',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej17',
+      title: 'Learn to love to read',
+      category: 'Growth',
+      imageURL:
+          'https://www.finnable.com/wp-content/uploads/2022/04/difference-between-short-term-loan-and-long-term-loan.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/learn-to-love-to-read',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej18',
+      title: 'Happiness is learned',
+      category: 'Happiness',
+      imageURL:
+          'https://t4.ftcdn.net/jpg/01/32/61/93/240_F_132619387_pOcjcRMZ49pus3YR4SDKN7zNsiTmJOVy.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/happiness-is-learned',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej19',
+      title: 'Happiness is a choice',
+      category: 'Happiness',
+      imageURL:
+          'https://t4.ftcdn.net/jpg/01/32/61/93/240_F_132619387_pOcjcRMZ49pus3YR4SDKN7zNsiTmJOVy.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/happiness-is-a-choice',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej20',
+      title: 'Happiness requires presence',
+      category: 'Happiness',
+      imageURL:
+          'https://t4.ftcdn.net/jpg/01/32/61/93/240_F_132619387_pOcjcRMZ49pus3YR4SDKN7zNsiTmJOVy.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/happiness-requires-presence',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej21',
+      title: 'Happiness requires peace',
+      category: 'Happiness',
+      imageURL:
+          'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a529a485865533.5d88f7341bc34.png',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/happiness-requires-peace',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej22',
+      title: 'Every desire is a chosen unhappiness',
+      category: 'Happiness',
+      imageURL:
+          'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a529a485865533.5d88f7341bc34.png',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/every-desire-is-a-chosen-unhappiness',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej23',
+      title: 'Success does not earn happiness',
+      category: 'Happiness',
+      imageURL:
+          'https://t4.ftcdn.net/jpg/00/58/99/07/240_F_58990717_6GkOtlWF1CirNp4cM7v5desXc8Ci8o64.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/success-does-not-earn-happiness',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej24',
+      title: 'Envy is the enemy of happiness',
+      category: 'Happiness',
+      imageURL:
+          'https://t4.ftcdn.net/jpg/00/58/99/07/240_F_58990717_6GkOtlWF1CirNp4cM7v5desXc8Ci8o64.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/envy-is-the-enemy-of-happiness',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej25',
+      title: 'Happiness is built by habits',
+      category: 'Happiness',
+      imageURL:
+          'https://t4.ftcdn.net/jpg/00/58/99/07/240_F_58990717_6GkOtlWF1CirNp4cM7v5desXc8Ci8o64.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/happiness-is-built-by-habits',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej26',
+      title: 'Find happiness in acceptance',
+      category: 'Happiness',
+      imageURL:
+          'https://t4.ftcdn.net/jpg/00/58/99/07/240_F_58990717_6GkOtlWF1CirNp4cM7v5desXc8Ci8o64.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/find-happiness-in-acceptance',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej27',
+      title: 'Choosing to be yourself',
+      category: 'Happiness',
+      imageURL:
+          'https://t4.ftcdn.net/jpg/00/58/99/07/240_F_58990717_6GkOtlWF1CirNp4cM7v5desXc8Ci8o64.jpg',
+      externalURL:
+          'navalmanack.com/almanack-of-naval-ravikant/choosing-to-be-yourself',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej28',
+      title: 'Choosing to care for yourself',
+      category: 'Happiness',
+      imageURL:
+          'https://s2.best-wallpaper.net/wallpaper/3840x2160/1706/Hands-take-care-green-plants_3840x2160.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/choosing-to-care-for-yourself',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej29',
+      title: 'Meditation + Mental strength',
+      category: 'Happiness',
+      imageURL:
+          'https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/5b635a174462927.64a312a506ba3.png',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/meditation-mental-strength',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej30',
+      title: 'Choosing to build yourself',
+      category: 'Happiness',
+      imageURL:
+          'https://t4.ftcdn.net/jpg/01/17/35/69/240_F_117356929_7TI2sQCtB1GPQc5b7cKLEeJV1LjT5Dh2.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/choosing-to-build-yourself',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej31',
+      title: 'Choosing to grow yourself',
+      category: 'Happiness',
+      imageURL:
+          'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a77d82178592621.64eafdfff050b.png',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/choosing-to-grow-yourself',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej32',
+      title: 'Choosing to free yourself',
+      category: 'Happiness',
+      imageURL:
+          'https://t3.ftcdn.net/jpg/02/60/61/72/240_F_260617273_vkQVhglgBQ98aGMc7L7VUT2xXgv4SceE.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/choosing-to-free-yourself',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej33',
+      title: 'The meanings of life',
+      category: 'Philosophy',
+      imageURL:
+          'https://t4.ftcdn.net/jpg/01/68/24/19/240_F_168241908_PMTctPVCX8HQD5chomNzfaU7U7ZrvtOB.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/the-meanings-of-life',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej34',
+      title: 'Live by your values',
+      category: 'Philosophy',
+      imageURL:
+          'https://t4.ftcdn.net/jpg/02/44/33/75/240_F_244337520_8az7l99jCIs7OF4XnSz8ortsDhi2HU1G.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/live-by-your-values',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej35',
+      title: 'Rational buddhism',
+      category: 'Philosophy',
+      imageURL:
+          'https://www.finnable.com/wp-content/uploads/2022/04/difference-between-short-term-loan-and-long-term-loan.jpg',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/rational-buddhism',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+    PostModel(
+      postId: 'ej36',
+      title: 'The present is all we have',
+      category: 'Happiness',
+      imageURL:
+          'https://mir-s3-cdn-cf.behance.net/project_modules/1400/5e802d146783551.62b8870697990.png',
+      externalURL:
+          'https://www.navalmanack.com/almanack-of-naval-ravikant/the-present-is-all-we-have',
+      publisherName: 'Eric Jorgenson',
+      publisherId: 'Eric-Jorgenson',
+      publisherProfileImageURL:
+          "https://static1.squarespace.com/static/images/5f51925321412a013b71a9b1/300w?format=100w",
+      publishDate: DateTime(2023, 9, 24),
+    ),
 
     //Life math money
     PostModel(
@@ -981,6 +1331,21 @@ class Globals {
       imageURL:
           'https://andrewchen.co/wp-content/uploads/2018/02/a16z-logo-gray.png',
       externalURL: 'https://pmarchive.com/guide_to_career_planning_part3.html',
+      publisherName: 'Pmarca',
+      publisherId: 'Marc-Andreessen',
+      publisherProfileImageURL:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Andreessen_Horowitz_new_logo.svg/2560px-Andreessen_Horowitz_new_logo.svg.png",
+      publishDate: DateTime(2023, 9, 24),
+    ),
+
+    //Marc Andreessen
+    PostModel(
+      postId: 'marc22',
+      title: "Why AI Will Save the World",
+      category: 'Business',
+      imageURL:
+          'https://a16z.com/wp-content/uploads/2023/04/Marc-Andreessen.png',
+      externalURL: 'https://a16z.com/ai-will-save-the-world/',
       publisherName: 'Pmarca',
       publisherId: 'Marc-Andreessen',
       publisherProfileImageURL:
