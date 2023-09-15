@@ -48,7 +48,8 @@ class _HomePage extends State<HomePage>
 
   //Here 2nd variable determines whether the user is searching within the list or
   //he is querying the whole list for first time.
-  void _fetchPosts({String? searchQuery, bool isSearching = false}) async {
+  Future<void> _fetchPosts(
+      {String? searchQuery, bool isSearching = false}) async {
     setState(() {
       _showProgress = true;
     });
@@ -65,6 +66,9 @@ class _HomePage extends State<HomePage>
         _visibleItems.add(Globals.allPostsList[i]);
       }
     }
+    _visibleItems.shuffle();
+
+    await Future.delayed(const Duration(seconds: 1));
 
     setState(() {
       _showProgress = false;
@@ -85,153 +89,163 @@ class _HomePage extends State<HomePage>
         onTap: () {
           FocusScope.of(context).requestFocus(FocusNode());
         },
-        child: SingleChildScrollView(
-          controller: _listScrollController,
-          child: Container(
-            padding: const EdgeInsets.fromLTRB(15, 30, 15, 0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        RichText(
-                          text: TextSpan(
-                            style: AppFonts.titleFont(),
-                            children: <TextSpan>[
-                              TextSpan(
-                                text: 'Almanac-Of',
-                                style: AppFonts.titleFont(
-                                    fontColor: AppColors.tertiaryColor),
+        child: RefreshIndicator(
+          onRefresh: _fetchPosts,
+          color: AppColors.primaryColor,
+          backgroundColor: AppColors.negativeColor,
+          child: SingleChildScrollView(
+            controller: _listScrollController,
+            child: Container(
+              padding: const EdgeInsets.fromLTRB(15, 30, 15, 0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          RichText(
+                            text: TextSpan(
+                              style: AppFonts.titleFont(),
+                              children: <TextSpan>[
+                                TextSpan(
+                                  text: 'Almanac-Of',
+                                  style: AppFonts.titleFont(
+                                      fontColor: AppColors.tertiaryColor),
+                                ),
+                                const TextSpan(
+                                  text: '-Wisdom',
+                                ),
+                              ],
+                            ),
+                          ),
+                          const SizedBox(height: 5),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Build your ',
+                                style: AppFonts.subtitleFont(),
                               ),
-                              const TextSpan(
-                                text: '-Wisdom',
+                              DefaultTextStyle(
+                                style: AppFonts.subtitleFont(
+                                  fontColor: AppColors.accentColor,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                                child: AnimatedTextKit(
+                                  repeatForever: true,
+                                  animatedTexts: [
+                                    RotateAnimatedText('Wealth',
+                                        transitionHeight: _transitionHeight),
+                                    RotateAnimatedText('Happiness',
+                                        transitionHeight: _transitionHeight),
+                                    RotateAnimatedText('Judgement',
+                                        transitionHeight: _transitionHeight),
+                                    RotateAnimatedText('Wisdom',
+                                        transitionHeight: _transitionHeight),
+                                  ],
+                                ),
                               ),
                             ],
                           ),
-                        ),
-                        const SizedBox(height: 5),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Build your ',
-                              style: AppFonts.subtitleFont(),
+                        ],
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 25),
+                  Row(
+                    children: [
+                      const Icon(IconlyLight.search),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: Container(
+                          decoration: const BoxDecoration(
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(50),
                             ),
-                            DefaultTextStyle(
-                              style: AppFonts.subtitleFont(
-                                fontColor: AppColors.accentColor,
-                                fontWeight: FontWeight.bold,
-                              ),
-                              child: AnimatedTextKit(
-                                repeatForever: true,
-                                animatedTexts: [
-                                  RotateAnimatedText('Wealth',
-                                      transitionHeight: _transitionHeight),
-                                  RotateAnimatedText('Happiness',
-                                      transitionHeight: _transitionHeight),
-                                  RotateAnimatedText('Judgement',
-                                      transitionHeight: _transitionHeight),
-                                  RotateAnimatedText('Wisdom',
-                                      transitionHeight: _transitionHeight),
-                                ],
-                              ),
+                            color: Color.fromARGB(222, 245, 245, 249),
+                          ),
+                          margin: const EdgeInsets.only(right: 10),
+                          padding: const EdgeInsets.only(
+                              left: 16, right: 14, top: 18, bottom: 10),
+                          child: TextField(
+                            controller: _searchTextEditingController,
+                            style: AppFonts.subtitleFont(
+                                fontColor: AppColors.negativeColor,
+                                fontWeight: FontWeight.bold),
+                            decoration: const InputDecoration(
+                              constraints: BoxConstraints(maxHeight: 28),
+                              hintText: 'Try searching "How to build wealth"',
+                              border: InputBorder.none,
                             ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 25),
-                Row(
-                  children: [
-                    const Icon(IconlyLight.search),
-                    const SizedBox(width: 10),
-                    Expanded(
-                      child: Container(
-                        decoration: const BoxDecoration(
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(50),
-                          ),
-                          color: Color.fromARGB(222, 245, 245, 249),
-                        ),
-                        margin: const EdgeInsets.only(right: 10),
-                        padding: const EdgeInsets.only(
-                            left: 16, right: 14, top: 18, bottom: 10),
-                        child: TextField(
-                          controller: _searchTextEditingController,
-                          style: AppFonts.subtitleFont(
-                              fontColor: AppColors.negativeColor,
-                              fontWeight: FontWeight.bold),
-                          decoration: const InputDecoration(
-                            constraints: BoxConstraints(maxHeight: 28),
-                            hintText: 'Try searching "How to build wealth"',
-                            border: InputBorder.none,
-                          ),
-                          onChanged: (value) {
-                            _fetchPosts(searchQuery: value, isSearching: true);
+                            onChanged: (value) {
+                              _fetchPosts(
+                                  searchQuery: value, isSearching: true);
 
-                            _listScrollController.animateTo(
-                              _listScrollController.position.minScrollExtent,
-                              duration: const Duration(milliseconds: 500),
-                              curve: Curves.fastOutSlowIn,
-                            );
-                          },
-                        ),
-                      ),
-                    ),
-                    Visibility(
-                      visible: _searchTextEditingController.text.isEmpty
-                          ? false
-                          : true,
-                      child: InkWell(
-                        onTap: () {
-                          _searchTextEditingController.text = '';
-                          FocusScope.of(context).requestFocus(FocusNode());
-                          _fetchPosts();
-                        },
-                        child: const Icon(IconlyLight.close_square),
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 35),
-                Text('For You', style: AppFonts.headingFont()),
-                const SizedBox(height: 10),
-                _showProgress
-                    ? const Center(
-                        child: CircularProgressIndicator(
-                            color: AppColors.secondaryColor),
-                      )
-                    : _visibleItems.isEmpty
-                        ? Center(
-                            child: Text(
-                              'Nothing found!\nTry searching for something else.',
-                              style: AppFonts.subtitleFont(
-                                  fontColor: AppColors.negativeColor),
-                              textAlign: TextAlign.center,
-                            ),
-                          )
-                        : ListView.separated(
-                            shrinkWrap: true,
-                            physics: const NeverScrollableScrollPhysics(),
-                            itemCount: _visibleItems.length,
-                            itemBuilder: (context, index) {
-                              return CustomWidget.postListTile(widget.observer,
-                                  _visibleItems[index], context);
-                            },
-                            separatorBuilder: (context, index) {
-                              return const Divider(
-                                height: 1,
-                                color: Color.fromARGB(255, 245, 245, 249),
+                              _listScrollController.animateTo(
+                                _listScrollController.position.minScrollExtent,
+                                duration: const Duration(milliseconds: 500),
+                                curve: Curves.fastOutSlowIn,
                               );
                             },
                           ),
-              ],
+                        ),
+                      ),
+                      Visibility(
+                        visible: _searchTextEditingController.text.isEmpty
+                            ? false
+                            : true,
+                        child: InkWell(
+                          onTap: () {
+                            _searchTextEditingController.text = '';
+                            FocusScope.of(context).requestFocus(FocusNode());
+                            _fetchPosts();
+                          },
+                          child: const Icon(IconlyLight.close_square),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 35),
+                  Text('For You', style: AppFonts.headingFont()),
+                  const SizedBox(height: 10),
+                  _showProgress
+                      ? const Center(
+                          child: LinearProgressIndicator(
+                            color: AppColors.primaryColor,
+                            backgroundColor: AppColors.primaryColor,
+                          ),
+                        )
+                      : _visibleItems.isEmpty
+                          ? Center(
+                              child: Text(
+                                'Nothing found!\nTry searching for something else.',
+                                style: AppFonts.subtitleFont(
+                                    fontColor: AppColors.negativeColor),
+                                textAlign: TextAlign.center,
+                              ),
+                            )
+                          : ListView.separated(
+                              shrinkWrap: true,
+                              physics: const NeverScrollableScrollPhysics(),
+                              itemCount: _visibleItems.length,
+                              itemBuilder: (context, index) {
+                                return CustomWidget.postListTile(
+                                    widget.observer,
+                                    _visibleItems[index],
+                                    context);
+                              },
+                              separatorBuilder: (context, index) {
+                                return const Divider(
+                                  height: 1,
+                                  color: Color.fromARGB(255, 245, 245, 249),
+                                );
+                              },
+                            ),
+                ],
+              ),
             ),
           ),
         ),

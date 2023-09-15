@@ -49,7 +49,7 @@ class CustomWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           CircleAvatar(
-            radius: 15,
+            radius: 13,
             backgroundColor: AppColors.negativeColor,
             child: postModel.publisherProfileImageURL == null
                 ? _placeholderImageForProfilePicture(postModel.publisherName[0])
