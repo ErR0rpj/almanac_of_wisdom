@@ -66,10 +66,9 @@ class _HomePage extends State<HomePage>
       for (int i = 0; i < Globals.allPostsList.length; i++) {
         _visibleItems.add(Globals.allPostsList[i]);
       }
+      _visibleItems.shuffle();
+      await Future.delayed(const Duration(seconds: 1));
     }
-    _visibleItems.shuffle();
-
-    await Future.delayed(const Duration(seconds: 1));
 
     setState(() {
       _showProgress = false;
