@@ -2,6 +2,7 @@ import 'package:almanac_of_wisdom/constants/colors.dart';
 import 'package:almanac_of_wisdom/constants/fonts.dart';
 import 'package:almanac_of_wisdom/constants/globals.dart';
 import 'package:almanac_of_wisdom/models/post_model.dart';
+import 'package:almanac_of_wisdom/screens/webpage_screen.dart';
 import 'package:almanac_of_wisdom/services/searchify.dart';
 import 'package:almanac_of_wisdom/utils/custom_widgets.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
@@ -65,10 +66,9 @@ class _HomePage extends State<HomePage>
       for (int i = 0; i < Globals.allPostsList.length; i++) {
         _visibleItems.add(Globals.allPostsList[i]);
       }
+      _visibleItems.shuffle();
+      await Future.delayed(const Duration(seconds: 1));
     }
-    _visibleItems.shuffle();
-
-    await Future.delayed(const Duration(seconds: 1));
 
     setState(() {
       _showProgress = false;
@@ -151,6 +151,20 @@ class _HomePage extends State<HomePage>
                             ],
                           ),
                         ],
+                      ),
+                      InkWell(
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => Webpage(widget.observer,
+                                  webpageURL: Globals.privacyPolicyURL),
+                            ),
+                          );
+                        },
+                        child: const Icon(
+                          IconlyLight.setting,
+                          size: 28,
+                        ),
                       ),
                     ],
                   ),
