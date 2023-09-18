@@ -141,8 +141,6 @@ class _HomePage extends State<HomePage>
                                         transitionHeight: _transitionHeight),
                                     RotateAnimatedText('Happiness',
                                         transitionHeight: _transitionHeight),
-                                    RotateAnimatedText('Judgement',
-                                        transitionHeight: _transitionHeight),
                                     RotateAnimatedText('Wisdom',
                                         transitionHeight: _transitionHeight),
                                   ],
