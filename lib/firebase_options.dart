@@ -58,7 +58,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCaTG4fH4yI_FHvxIsTXqSUTHaBVof0jxU',
-    appId: '1:1098586347627:android:03614c11a1cb4b4731792e',
+    appId: '1:1098586347627:android:1ff265ba3c7ea03a31792e',
     messagingSenderId: '1098586347627',
     projectId: 'almanac-of-wisdom',
     storageBucket: 'almanac-of-wisdom.appspot.com',

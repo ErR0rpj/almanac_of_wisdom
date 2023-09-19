@@ -1,4 +1,4 @@
-package com.example.almanac_of_wisdom;
+package com.JainDevelopers.almanac_of_wisdom;
 
 import io.flutter.embedding.android.FlutterActivity;
 
