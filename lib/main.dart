@@ -20,7 +20,7 @@ void main() async {
 
   //This is for Web view
   if (Platform.isAndroid) {
-    await AndroidInAppWebViewController.setWebContentsDebuggingEnabled(true);
+    await InAppWebViewController.setWebContentsDebuggingEnabled(true);
   }
 
   runApp(const MyApp());

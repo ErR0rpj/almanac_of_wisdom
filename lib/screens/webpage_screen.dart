@@ -20,14 +20,10 @@ class _WebpageState extends State<Webpage>
   final GlobalKey _webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
-  InAppWebViewGroupOptions options = InAppWebViewGroupOptions(
-    crossPlatform: InAppWebViewOptions(
-      useShouldOverrideUrlLoading: true,
-      mediaPlaybackRequiresUserGesture: false,
-    ),
-    android: AndroidInAppWebViewOptions(
-      useHybridComposition: false,
-    ),
+  InAppWebViewSettings options = InAppWebViewSettings(
+    useShouldOverrideUrlLoading: true,
+    mediaPlaybackRequiresUserGesture: false,
+    useHybridComposition: false,
   );
 
   late PullToRefreshController pullToRefreshController;
@@ -38,7 +34,7 @@ class _WebpageState extends State<Webpage>
     super.initState();
 
     pullToRefreshController = PullToRefreshController(
-      options: PullToRefreshOptions(
+      settings: PullToRefreshSettings(
         color: AppColors.negativeColor,
       ),
       onRefresh: () async {
@@ -86,24 +82,22 @@ class _WebpageState extends State<Webpage>
                   InAppWebView(
                     key: _webViewKey,
                     initialUrlRequest:
-                        URLRequest(url: Uri.parse(widget.webpageURL)),
-                    initialOptions: options,
+                        URLRequest(url: WebUri(widget.webpageURL)),
+                    initialSettings: options,
                     pullToRefreshController: pullToRefreshController,
                     onWebViewCreated: (controller) {
                       webViewController = controller;
                     },
-                    androidOnPermissionRequest:
-                        (controller, origin, resources) async {
+                    onPermissionRequest: (controller, origin) async {
                       //Asks for permission to open URL in app
-                      return PermissionRequestResponse(
-                          resources: resources,
-                          action: PermissionRequestResponseAction.GRANT);
+                      return PermissionResponse(
+                          action: PermissionResponseAction.GRANT);
                     },
                     // onLoadStart: ,
                     onLoadStop: (controller, url) async {
                       pullToRefreshController.endRefreshing();
                     },
-                    onLoadError: (controller, url, code, message) {
+                    onReceivedError: (controller, url, code) {
                       pullToRefreshController.endRefreshing();
                     },
                     onProgressChanged: (controller, progress) {
