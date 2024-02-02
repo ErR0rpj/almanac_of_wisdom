@@ -10,11 +10,11 @@ class Post extends Equatable {
     required this.searchKeywords,
     required this.publisherId,
     this.externalURL,
-    this.saveCount = 0,
-    this.views = 0,
-    this.sharesCount = 0,
-    this.totalTimeSpent = 0,
-    this.averageTimeSpent = 0,
+    required this.saveCount,
+    required this.views,
+    required this.sharesCount,
+    required this.totalTimeSpent,
+    required this.averageTimeSpent,
     required this.publishDate,
   });
 
