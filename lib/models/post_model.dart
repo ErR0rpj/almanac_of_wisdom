@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class PostModel {
   //TBD how to create this uniquely.
-  final String postId;
+  final String id;
   //Title of the post. Shown in feed
   final String title;
   //Categories: Wealth, Judgement, Happiness, self-enlightenment, philosophy, others
@@ -45,7 +45,7 @@ class PostModel {
   Widget? imageErrorWidget;
 
   PostModel({
-    required this.postId,
+    required this.id,
     required this.title,
     required this.category,
     this.imageURL,

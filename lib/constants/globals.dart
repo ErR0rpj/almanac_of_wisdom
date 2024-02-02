@@ -7,7 +7,7 @@ class Globals {
   static List<PostModel> allPostsList = [
     //Navalmanack
     PostModel(
-      postId: 'xf45w31ff-fs51vv',
+      id: 'xf45w31ff-fs51vv',
       title: 'Understand how wealth is created',
       category: 'Wealth',
       imageURL:
@@ -21,7 +21,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'xf45w31ff-1232',
+      id: 'xf45w31ff-1232',
       title: 'Find and build specific knowledge',
       category: 'Wealth',
       imageURL:
@@ -35,7 +35,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'xf45w31ff-1232',
+      id: 'xf45w31ff-1232',
       title: 'Play long term games with long term people',
       category: 'Wealth',
       imageURL:
@@ -49,7 +49,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'xf45w31ff-fs51v221v',
+      id: 'xf45w31ff-fs51v221v',
       title: 'Take on accountability',
       category: 'Wealth',
       imageURL: 'images/wealth.jpg',
@@ -62,7 +62,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'xf45w31ff-123vdvsgg200',
+      id: 'xf45w31ff-123vdvsgg200',
       title: 'Build or buy equity in a business',
       category: 'Wealth',
       imageURL:
@@ -76,7 +76,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: '123xf4544w31ff-1232',
+      id: '123xf4544w31ff-1232',
       title: 'Find a position of leverage',
       category: 'Wealth',
       imageURL:
@@ -90,7 +90,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: '123xf4544w31f123f-1232',
+      id: '123xf4544w31f123f-1232',
       title: 'Get paid for your judgment',
       category: 'Wealth',
       imageURL:
@@ -104,7 +104,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: '123xf45-1232',
+      id: '123xf45-1232',
       title: 'Prioritize and focus',
       category: 'Wealth',
       imageURL:
@@ -118,7 +118,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: '123xf45-1232',
+      id: '123xf45-1232',
       title: 'Find work that feels like play',
       category: 'Wealth',
       imageURL:
@@ -132,7 +132,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: '12333xf45-1232',
+      id: '12333xf45-1232',
       title: 'How to get lucky',
       category: 'Wealth',
       imageURL:
@@ -146,7 +146,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: '123x11f45-1232',
+      id: '123x11f45-1232',
       title: 'Be patient',
       category: 'Wealth',
       imageURL:
@@ -160,7 +160,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej12',
+      id: 'ej12',
       title: 'Building judgment',
       category: 'Growth',
       imageURL:
@@ -174,7 +174,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej13',
+      id: 'ej13',
       title: 'How to think clearly',
       category: 'Growth',
       imageURL:
@@ -188,7 +188,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej14',
+      id: 'ej14',
       title: 'Shed your identity to see reality',
       category: 'Growth',
       imageURL:
@@ -202,7 +202,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej15',
+      id: 'ej15',
       title: 'Learn the skills of decision-making',
       category: 'Growth',
       imageURL:
@@ -216,7 +216,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej16',
+      id: 'ej16',
       title: 'Collect mental models',
       category: 'Growth',
       imageURL:
@@ -230,7 +230,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej17',
+      id: 'ej17',
       title: 'Learn to love to read',
       category: 'Growth',
       imageURL:
@@ -244,7 +244,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej18',
+      id: 'ej18',
       title: 'Happiness is learned',
       category: 'Happiness',
       imageURL:
@@ -258,7 +258,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej19',
+      id: 'ej19',
       title: 'Happiness is a choice',
       category: 'Happiness',
       imageURL:
@@ -272,7 +272,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej20',
+      id: 'ej20',
       title: 'Happiness requires presence',
       category: 'Happiness',
       imageURL:
@@ -286,7 +286,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej21',
+      id: 'ej21',
       title: 'Happiness requires peace',
       category: 'Happiness',
       imageURL:
@@ -300,7 +300,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej22',
+      id: 'ej22',
       title: 'Every desire is a chosen unhappiness',
       category: 'Happiness',
       imageURL:
@@ -314,7 +314,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej23',
+      id: 'ej23',
       title: 'Success does not earn happiness',
       category: 'Happiness',
       imageURL:
@@ -328,7 +328,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej24',
+      id: 'ej24',
       title: 'Envy is the enemy of happiness',
       category: 'Happiness',
       imageURL:
@@ -342,7 +342,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej25',
+      id: 'ej25',
       title: 'Happiness is built by habits',
       category: 'Happiness',
       imageURL:
@@ -356,7 +356,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej26',
+      id: 'ej26',
       title: 'Find happiness in acceptance',
       category: 'Happiness',
       imageURL:
@@ -370,7 +370,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej27',
+      id: 'ej27',
       title: 'Choosing to be yourself',
       category: 'Happiness',
       imageURL:
@@ -384,7 +384,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej28',
+      id: 'ej28',
       title: 'Choosing to care for yourself',
       category: 'Happiness',
       imageURL:
@@ -398,7 +398,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej29',
+      id: 'ej29',
       title: 'Meditation + Mental strength',
       category: 'Happiness',
       imageURL:
@@ -412,7 +412,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej30',
+      id: 'ej30',
       title: 'Choosing to build yourself',
       category: 'Happiness',
       imageURL:
@@ -426,7 +426,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej31',
+      id: 'ej31',
       title: 'Choosing to grow yourself',
       category: 'Happiness',
       imageURL:
@@ -440,7 +440,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej32',
+      id: 'ej32',
       title: 'Choosing to free yourself',
       category: 'Happiness',
       imageURL:
@@ -454,7 +454,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej33',
+      id: 'ej33',
       title: 'The meanings of life',
       category: 'Philosophy',
       imageURL:
@@ -468,7 +468,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej34',
+      id: 'ej34',
       title: 'Live by your values',
       category: 'Philosophy',
       imageURL:
@@ -482,7 +482,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej35',
+      id: 'ej35',
       title: 'Rational buddhism',
       category: 'Philosophy',
       imageURL:
@@ -496,7 +496,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'ej36',
+      id: 'ej36',
       title: 'The present is all we have',
       category: 'Happiness',
       imageURL:
@@ -512,7 +512,7 @@ class Globals {
 
     //Life math money
     PostModel(
-      postId: 'lmmpost1',
+      id: 'lmmpost1',
       title: "Want to understand what's going on in the world?",
       category: 'Society & Culture',
       imageURL:
@@ -526,7 +526,7 @@ class Globals {
       publishDate: DateTime(2023, 6, 28),
     ),
     PostModel(
-      postId: 'lmmpost2',
+      id: 'lmmpost2',
       title: "The truth about UK foriegn “aid” to India",
       category: 'Life',
       imageURL:
@@ -540,7 +540,7 @@ class Globals {
       publishDate: DateTime(2023, 8, 24),
     ),
     PostModel(
-      postId: 'lmmpost3',
+      id: 'lmmpost3',
       title:
           "Does life get better with time (Where are you headed in 10 years?)",
       category: 'Life',
@@ -555,7 +555,7 @@ class Globals {
       publishDate: DateTime(2023, 5, 28),
     ),
     PostModel(
-      postId: 'lmmpost4',
+      id: 'lmmpost4',
       title: "Why you should own yourname.com",
       category: 'Miscellaneous',
       imageURL:
@@ -568,7 +568,7 @@ class Globals {
       publishDate: DateTime(2023, 3, 10),
     ),
     PostModel(
-      postId: 'lmmpost5',
+      id: 'lmmpost5',
       title: "Why communism doesn't work",
       category: 'Society & Culture',
       imageURL:
@@ -583,7 +583,7 @@ class Globals {
 
     //Farman street
     PostModel(
-      postId: 'fspost1',
+      id: 'fspost1',
       title: "Accelerated Learning: Learn Faster and Remember More",
       category: 'Wisdom',
       imageURL:
@@ -596,7 +596,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'fspost2',
+      id: 'fspost2',
       title: "Mental Models: The Best Way to Make Intelligent Decisions",
       category: 'Wisdom',
       imageURL:
@@ -609,7 +609,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'fspost3',
+      id: 'fspost3',
       title: "Measuring and Evaluating",
       category: 'Wisdom',
       imageURL:
@@ -622,7 +622,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 10),
     ),
     PostModel(
-      postId: 'fspost4',
+      id: 'fspost4',
       title: "Surface Area of Luck",
       category: 'Wisdom',
       imageURL:
@@ -635,7 +635,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 3),
     ),
     PostModel(
-      postId: 'fspost5',
+      id: 'fspost5',
       title: "Completely Obsessed",
       category: 'Wisdom',
       imageURL:
@@ -648,7 +648,7 @@ class Globals {
       publishDate: DateTime(2023, 8, 27),
     ),
     PostModel(
-      postId: 'fspost6',
+      id: 'fspost6',
       title: "Completely Obsessed",
       category: 'Wisdom',
       imageURL: 'https://cdn.fs.teachablecdn.com/3UxJ7R8yRFuScoMfTAef',
@@ -660,7 +660,7 @@ class Globals {
       publishDate: DateTime(2023, 8, 20),
     ),
     PostModel(
-      postId: 'fspost7',
+      id: 'fspost7',
       title: "Proven Benefits",
       category: 'Wisdom',
       imageURL: 'https://cdn.fs.teachablecdn.com/3UxJ7R8yRFuScoMfTAef',
@@ -672,7 +672,7 @@ class Globals {
       publishDate: DateTime(2023, 8, 13),
     ),
     PostModel(
-      postId: 'fspost8',
+      id: 'fspost8',
       title: "Something Unique",
       category: 'Wisdom',
       imageURL: 'https://cdn.fs.teachablecdn.com/3UxJ7R8yRFuScoMfTAef',
@@ -684,7 +684,7 @@ class Globals {
       publishDate: DateTime(2023, 8, 6),
     ),
     PostModel(
-      postId: 'fspost9',
+      id: 'fspost9',
       title: "High Expectations",
       category: 'Wisdom',
       imageURL: 'https://cdn.fs.teachablecdn.com/3UxJ7R8yRFuScoMfTAef',
@@ -696,7 +696,7 @@ class Globals {
       publishDate: DateTime(2023, 7, 30),
     ),
     PostModel(
-      postId: 'fspost10',
+      id: 'fspost10',
       title: "How to Make Smart Decisions Without Getting Lucky",
       category: 'Wisdom',
       imageURL:
@@ -709,7 +709,7 @@ class Globals {
       publishDate: DateTime(2023, 7, 30),
     ),
     PostModel(
-      postId: 'fspost11',
+      id: 'fspost11',
       title: "Reading Better: Retaining and Applying What You Read",
       category: 'Wisdom',
       imageURL:
@@ -722,7 +722,7 @@ class Globals {
       publishDate: DateTime(2023, 7, 30),
     ),
     PostModel(
-      postId: 'fspost12',
+      id: 'fspost12',
       title: "How to Think Better: The Skill You've Never Been Taught",
       category: 'Wisdom',
       imageURL: 'https://cdn.fs.teachablecdn.com/3UxJ7R8yRFuScoMfTAef',
@@ -734,7 +734,7 @@ class Globals {
       publishDate: DateTime(2023, 7, 30),
     ),
     PostModel(
-      postId: 'fspost13',
+      id: 'fspost13',
       title: "Tiny Gains. Massive Results.",
       category: 'Wisdom',
       imageURL: 'https://cdn.fs.teachablecdn.com/3UxJ7R8yRFuScoMfTAef',
@@ -748,7 +748,7 @@ class Globals {
 
     //Stratechery
     PostModel(
-      postId: 'stratpost1',
+      id: 'stratpost1',
       title: "Aggregation Theory - How Internet Disrupted Industries",
       category: 'Business',
       imageURL:
@@ -761,7 +761,7 @@ class Globals {
       publishDate: DateTime(2015, 7, 15),
     ),
     PostModel(
-      postId: 'stratpost2',
+      id: 'stratpost2',
       title: "Defining Aggregators",
       category: 'Business',
       imageURL: '',
@@ -773,7 +773,7 @@ class Globals {
       publishDate: DateTime(2017, 9, 26),
     ),
     PostModel(
-      postId: 'stratpost3',
+      id: 'stratpost3',
       title: "Zillow, Aggregation, and Integration",
       category: 'Business',
       imageURL:
@@ -787,7 +787,7 @@ class Globals {
       publishDate: DateTime(2018, 4, 16),
     ),
     PostModel(
-      postId: 'stratpost4',
+      id: 'stratpost4',
       title: "The FAANG Playbook",
       category: 'Business',
       imageURL:
@@ -800,7 +800,7 @@ class Globals {
       publishDate: DateTime(2018, 4, 16),
     ),
     PostModel(
-      postId: 'stratpost5',
+      id: 'stratpost5',
       title: "The Voters Decide",
       category: 'Business',
       imageURL:
@@ -813,7 +813,7 @@ class Globals {
       publishDate: DateTime(2016, 3, 2),
     ),
     PostModel(
-      postId: 'stratpost6',
+      id: 'stratpost6',
       title: "The Super-Aggregators and the Russians",
       category: 'Business',
       imageURL:
@@ -827,7 +827,7 @@ class Globals {
       publishDate: DateTime(2016, 3, 2),
     ),
     PostModel(
-      postId: 'stratpost7',
+      id: 'stratpost7',
       title: "Gaming the Smiling Curve",
       category: 'Business',
       imageURL:
@@ -840,7 +840,7 @@ class Globals {
       publishDate: DateTime(2016, 3, 2),
     ),
     PostModel(
-      postId: 'stratpost8',
+      id: 'stratpost8',
       title: "Publishers and the Smiling Curve",
       category: 'Business',
       imageURL:
@@ -853,7 +853,7 @@ class Globals {
       publishDate: DateTime(2016, 3, 2),
     ),
     PostModel(
-      postId: 'stratpost8',
+      id: 'stratpost8',
       title: "Differentiation and Value Capture in the Internet Age",
       category: 'Business',
       imageURL:
@@ -867,7 +867,7 @@ class Globals {
       publishDate: DateTime(2016, 3, 2),
     ),
     PostModel(
-      postId: 'stratpost9',
+      id: 'stratpost9',
       title: "The Super-Aggregators and the Russians",
       category: 'Business',
       imageURL:
@@ -881,7 +881,7 @@ class Globals {
       publishDate: DateTime(2016, 3, 2),
     ),
     PostModel(
-      postId: 'stratpost10',
+      id: 'stratpost10',
       title: "The IT Era and the Internet Revolution",
       category: 'Business',
       imageURL:
@@ -895,7 +895,7 @@ class Globals {
       publishDate: DateTime(2016, 3, 2),
     ),
     PostModel(
-      postId: 'stratpost11',
+      id: 'stratpost11',
       title: "The IT Era and the Internet Revolution",
       category: 'Business',
       imageURL:
@@ -908,7 +908,7 @@ class Globals {
       publishDate: DateTime(2015, 12, 2),
     ),
     PostModel(
-      postId: 'stratpost12',
+      id: 'stratpost12',
       title: "The Moat Map",
       category: 'Business',
       imageURL:
@@ -921,7 +921,7 @@ class Globals {
       publishDate: DateTime(2018, 5, 15),
     ),
     PostModel(
-      postId: 'stratpost13',
+      id: 'stratpost13',
       title: "Economic Power in the Age of Abundance",
       category: 'Business',
       imageURL:
@@ -934,7 +934,7 @@ class Globals {
       publishDate: DateTime(2018, 5, 15),
     ),
     PostModel(
-      postId: 'stratpost13',
+      id: 'stratpost13',
       title: "Why Uber Fights",
       category: 'Business',
       imageURL:
@@ -947,7 +947,7 @@ class Globals {
       publishDate: DateTime(2018, 5, 15),
     ),
     PostModel(
-      postId: 'stratpost14',
+      id: 'stratpost14',
       title: "The Funnel Framework",
       category: 'Business',
       imageURL: 'https://images5.alphacoders.com/426/426870.jpg',
@@ -959,7 +959,7 @@ class Globals {
       publishDate: DateTime(2015, 6, 3),
     ),
     PostModel(
-      postId: 'stratpost15',
+      id: 'stratpost15',
       title: "Disney and Fox",
       category: 'Business',
       imageURL:
@@ -972,7 +972,7 @@ class Globals {
       publishDate: DateTime(2017, 12, 12),
     ),
     PostModel(
-      postId: 'stratpost16',
+      id: 'stratpost16',
       title: "Amazon Health",
       category: 'Business',
       imageURL: 'https://wallpapercave.com/wp/wp7771186.jpg',
@@ -984,7 +984,7 @@ class Globals {
       publishDate: DateTime(2017, 12, 12),
     ),
     PostModel(
-      postId: 'stratpost17',
+      id: 'stratpost17',
       title: "A Framework for Regulating Competition on the Internet",
       category: 'Business',
       imageURL:
@@ -998,7 +998,7 @@ class Globals {
       publishDate: DateTime(2017, 12, 12),
     ),
     PostModel(
-      postId: 'stratpost18',
+      id: 'stratpost18',
       title: "Shopify and the Power of Platforms",
       category: 'Business',
       imageURL:
@@ -1012,7 +1012,7 @@ class Globals {
       publishDate: DateTime(2017, 12, 12),
     ),
     PostModel(
-      postId: 'stratpost19',
+      id: 'stratpost19',
       title: "The Bill Gates Line",
       category: 'Business',
       imageURL:
@@ -1027,7 +1027,7 @@ class Globals {
 
     //Pmarca
     PostModel(
-      postId: 'marc1',
+      id: 'marc1',
       title: 'Why not to do a startup',
       category: 'Business',
       imageURL:
@@ -1040,7 +1040,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc2',
+      id: 'marc2',
       title: 'When the VCs say “no”',
       category: 'Business',
       imageURL:
@@ -1053,7 +1053,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc3',
+      id: 'marc3',
       title: "But I don't know any VCs!",
       category: 'Business',
       imageURL:
@@ -1066,7 +1066,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc4',
+      id: 'marc4',
       title: "The only thing that matters",
       category: 'Business',
       imageURL:
@@ -1079,7 +1079,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc5',
+      id: 'marc5',
       title: "The Moby Dick theory of big companies",
       category: 'Business',
       imageURL:
@@ -1092,7 +1092,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc6',
+      id: 'marc6',
       title: "How much funding is too little? Too much?",
       category: 'Business',
       imageURL:
@@ -1105,7 +1105,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc7',
+      id: 'marc7',
       title: "Why a startup's initial business plan doesn't matter that much",
       category: 'Business',
       imageURL:
@@ -1118,7 +1118,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc8',
+      id: 'marc8',
       title: "Hiring, managing, promoting, and firing executives",
       category: 'Business',
       imageURL:
@@ -1131,7 +1131,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc9',
+      id: 'marc9',
       title: "How to hire a professional CEO",
       category: 'Business',
       imageURL:
@@ -1144,7 +1144,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc10',
+      id: 'marc10',
       title: "Part 1: The truth about venture capitalists",
       category: 'Business',
       imageURL:
@@ -1157,7 +1157,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc11',
+      id: 'marc11',
       title: "Part 2: The truth about venture capitalists",
       category: 'Business',
       imageURL:
@@ -1170,7 +1170,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc12',
+      id: 'marc12',
       title: "Part 3: The truth about venture capitalists",
       category: 'Business',
       imageURL:
@@ -1183,7 +1183,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc13',
+      id: 'marc13',
       title: "How to hire the best people you've ever worked with",
       category: 'Business',
       imageURL:
@@ -1196,7 +1196,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc14',
+      id: 'marc14',
       title: "Serial entrepreneurs and today's Silicon Valley",
       category: 'Business',
       imageURL:
@@ -1210,7 +1210,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc15',
+      id: 'marc15',
       title: "The Psychology of Entrepreneurial Misjudgment: Biases 1-6",
       category: 'Business',
       imageURL:
@@ -1224,7 +1224,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc16',
+      id: 'marc16',
       title: "Age and the Entrepreneur: Some data",
       category: 'Business',
       imageURL:
@@ -1237,7 +1237,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc17',
+      id: 'marc17',
       title: "Luck and the Entrepreneur: The four kinds of luck",
       category: 'Business',
       imageURL:
@@ -1250,7 +1250,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc18',
+      id: 'marc18',
       title: "Pmarca Guide to Personal Productivity",
       category: 'Business',
       imageURL:
@@ -1263,7 +1263,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc19',
+      id: 'marc19',
       title: "Pmarca Guide to Career Planning: Introduction",
       category: 'Business',
       imageURL:
@@ -1276,7 +1276,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc20',
+      id: 'marc20',
       title: "Pmarca Guide to Career Planning: Opportunity",
       category: 'Business',
       imageURL:
@@ -1289,7 +1289,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc21',
+      id: 'marc21',
       title: "Pmarca Guide to Career Planning: Skills and education",
       category: 'Business',
       imageURL:
@@ -1302,7 +1302,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc22',
+      id: 'marc22',
       title: "Pmarca Guide to Career Planning: Where to go and why",
       category: 'Business',
       imageURL:
@@ -1315,7 +1315,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc23',
+      id: 'marc23',
       title: "Guide to Big Companies: Turnaround!",
       category: 'Business',
       imageURL:
@@ -1328,7 +1328,7 @@ class Globals {
       publishDate: DateTime(2023, 9, 24),
     ),
     PostModel(
-      postId: 'marc21',
+      id: 'marc21',
       title: "Guide to Big Companies: Retaining great people",
       category: 'Business',
       imageURL:
@@ -1343,7 +1343,7 @@ class Globals {
 
     //Marc Andreessen
     PostModel(
-      postId: 'marc22',
+      id: 'marc22',
       title: "Why AI Will Save the World",
       category: 'Business',
       imageURL:
