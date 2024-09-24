@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'package:almanac_of_wisdom/constants/colors.dart';
 import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
@@ -20,31 +19,27 @@ class _WebpageState extends State<Webpage>
   final GlobalKey _webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
-  InAppWebViewGroupOptions options = InAppWebViewGroupOptions(
-    crossPlatform: InAppWebViewOptions(
-      useShouldOverrideUrlLoading: true,
-      mediaPlaybackRequiresUserGesture: false,
-    ),
-    android: AndroidInAppWebViewOptions(
-      useHybridComposition: false,
-    ),
+  InAppWebViewSettings options = InAppWebViewSettings(
+    javaScriptEnabled: true,
+    mediaPlaybackRequiresUserGesture: false,
+    useHybridComposition: false,
   );
 
   late PullToRefreshController pullToRefreshController;
   double progress = 0;
+  bool _hasError = false;
 
   @override
   void initState() {
     super.initState();
 
     pullToRefreshController = PullToRefreshController(
-      options: PullToRefreshOptions(
+      settings: PullToRefreshSettings(
         color: AppColors.negativeColor,
       ),
       onRefresh: () async {
-        if (Platform.isAndroid) {
-          webViewController?.reload();
-        }
+        _hasError = false;
+        webViewController?.reload();
       },
     );
   }
@@ -52,83 +47,132 @@ class _WebpageState extends State<Webpage>
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    //For storing the page opening in firebase analytics
     widget.observer.subscribe(this, ModalRoute.of(context)! as PageRoute);
   }
 
   @override
   void dispose() {
     widget.observer.unsubscribe(this);
+    webViewController?.dispose();
+    pullToRefreshController.dispose();
     super.dispose();
+  }
+
+  Future<bool> _handleBackPressed() async {
+    if (webViewController != null) {
+      bool canGoBack = await webViewController!.canGoBack();
+      if (canGoBack) {
+        webViewController!.goBack();
+        return false;
+      }
+    }
+    return true;
+  }
+
+  Widget _buildErrorWidget() {
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Icon(Icons.error_outline,
+              size: 64, color: AppColors.negativeColor),
+          const SizedBox(height: 16),
+          const Text(
+            'Failed to load webpage',
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          ),
+          const SizedBox(height: 8),
+          ElevatedButton(
+            onPressed: () {
+              setState(() {
+                _hasError = false;
+              });
+              webViewController?.reload();
+            },
+            child: const Text('Retry'),
+          ),
+        ],
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: AppColors.primaryColor,
-        leading: InkWell(
-          onTap: () {
-            Navigator.of(context).pop();
-          },
-          child: const Icon(
-            IconlyLight.arrow_left_2,
-            color: AppColors.secondaryColor,
+    return PopScope(
+      canPop: false,
+      onPopInvoked: (didPop) async {
+        if (didPop) return;
+        final shouldPop = await _handleBackPressed();
+        if (shouldPop && context.mounted) {
+          Navigator.of(context).pop();
+        }
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: AppColors.primaryColor,
+          leading: InkWell(
+            onTap: () {
+              Navigator.of(context).pop();
+            },
+            child: const Icon(
+              IconlyLight.arrow_left_2,
+              color: AppColors.secondaryColor,
+            ),
           ),
         ),
-      ),
-      body: SafeArea(
-        child: Column(
-          children: <Widget>[
-            Expanded(
-              child: Stack(
-                children: [
-                  InAppWebView(
-                    key: _webViewKey,
-                    initialUrlRequest:
-                        URLRequest(url: Uri.parse(widget.webpageURL)),
-                    initialOptions: options,
-                    pullToRefreshController: pullToRefreshController,
-                    onWebViewCreated: (controller) {
-                      webViewController = controller;
-                    },
-                    androidOnPermissionRequest:
-                        (controller, origin, resources) async {
-                      //Asks for permission to open URL in app
-                      return PermissionRequestResponse(
-                          resources: resources,
-                          action: PermissionRequestResponseAction.GRANT);
-                    },
-                    // onLoadStart: ,
-                    onLoadStop: (controller, url) async {
-                      pullToRefreshController.endRefreshing();
-                    },
-                    onLoadError: (controller, url, code, message) {
-                      pullToRefreshController.endRefreshing();
-                    },
-                    onProgressChanged: (controller, progress) {
-                      if (progress == 100) {
-                        pullToRefreshController.endRefreshing();
-                      }
-                      setState(() {
-                        this.progress = progress / 100;
-                      });
-                    },
-                    onConsoleMessage: (controller, consoleMessage) {
-                      debugPrint(consoleMessage.message);
-                    },
-                  ),
-                  progress < 1.0
-                      ? LinearProgressIndicator(
-                          value: progress,
-                          color: AppColors.primaryColor,
-                          backgroundColor: AppColors.negativeColor,
-                        )
-                      : Container(),
-                ],
+        body: SafeArea(
+          child: Column(
+            children: <Widget>[
+              Expanded(
+                child: Stack(
+                  children: [
+                    if (!_hasError)
+                      InAppWebView(
+                        key: _webViewKey,
+                        initialUrlRequest: URLRequest(
+                            url: WebUri.uri(Uri.parse(widget.webpageURL))),
+                        initialSettings: options,
+                        pullToRefreshController: pullToRefreshController,
+                        onWebViewCreated: (controller) {
+                          webViewController = controller;
+                        },
+                        onPermissionRequest: (controller, origin) async {
+                          return PermissionResponse(
+                              action: PermissionResponseAction.GRANT);
+                        },
+                        onLoadStop: (controller, url) async {
+                          pullToRefreshController.endRefreshing();
+                        },
+                        onReceivedError: (controller, url, code) {
+                          pullToRefreshController.endRefreshing();
+                          setState(() {
+                            _hasError = true;
+                          });
+                        },
+                        onProgressChanged: (controller, progress) {
+                          if (progress == 100) {
+                            pullToRefreshController.endRefreshing();
+                          }
+                          setState(() {
+                            this.progress = progress / 100;
+                          });
+                        },
+                        onConsoleMessage: (controller, consoleMessage) {
+                          debugPrint(consoleMessage.message);
+                        },
+                      ),
+                    if (_hasError) _buildErrorWidget(),
+                    if (!_hasError && progress < 1.0)
+                      LinearProgressIndicator(
+                        value: progress,
+                        color: AppColors.primaryColor,
+                        backgroundColor: AppColors.negativeColor,
+                      ),
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

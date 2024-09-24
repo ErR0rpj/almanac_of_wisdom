@@ -66,7 +66,9 @@ class _HomePage extends State<HomePage>
       for (int i = 0; i < Globals.allPostsList.length; i++) {
         _visibleItems.add(Globals.allPostsList[i]);
       }
-      _visibleItems.shuffle();
+      _visibleItems.sort((b, a) {
+        return (a.publishDate).compareTo((b.publishDate));
+      });
       await Future.delayed(const Duration(seconds: 1));
     }
 
@@ -177,11 +179,11 @@ class _HomePage extends State<HomePage>
                             borderRadius: BorderRadius.all(
                               Radius.circular(50),
                             ),
-                            color: Color.fromARGB(222, 245, 245, 249),
+                            color: Color.fromARGB(225, 214, 214, 221),
                           ),
                           margin: const EdgeInsets.only(right: 10),
                           padding: const EdgeInsets.only(
-                              left: 16, right: 14, top: 18, bottom: 10),
+                              left: 16, right: 14, top: 14, bottom: 14),
                           child: TextField(
                             controller: _searchTextEditingController,
                             style: AppFonts.subtitleFont(
@@ -189,7 +191,8 @@ class _HomePage extends State<HomePage>
                                 fontWeight: FontWeight.bold),
                             decoration: const InputDecoration(
                               constraints: BoxConstraints(maxHeight: 28),
-                              hintText: 'Try searching "How to build wealth"',
+                              hintText:
+                                  'Try searching "Finshots, Alpha Ideas, etc"',
                               border: InputBorder.none,
                             ),
                             onChanged: (value) {
@@ -221,7 +224,7 @@ class _HomePage extends State<HomePage>
                     ],
                   ),
                   const SizedBox(height: 35),
-                  Text('For You', style: AppFonts.headingFont()),
+                  Text('Daily Reads', style: AppFonts.headingFont()),
                   const SizedBox(height: 10),
                   _showProgress
                       ? const Center(
@@ -256,6 +259,41 @@ class _HomePage extends State<HomePage>
                                 );
                               },
                             ),
+                  const SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        'assets/icon/aw_logo.png',
+                        height: 24,
+                      ),
+                      const SizedBox(width: 8),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text.rich(
+                            TextSpan(text: '© Almanac-Of-', children: [
+                              TextSpan(
+                                  text: 'Wisdom',
+                                  style: TextStyle(
+                                    color: AppColors.accentColor,
+                                  )),
+                            ]),
+                            style: TextStyle(
+                              color: AppColors.tertiaryColor,
+                              fontSize: 12,
+                            ),
+                          ),
+                          Text(
+                            'v${Globals.packageInfo.version} (${Globals.packageInfo.buildNumber})',
+                            style: const TextStyle(
+                                color: AppColors.tertiaryColor, fontSize: 11),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 20),
                 ],
               ),
             ),

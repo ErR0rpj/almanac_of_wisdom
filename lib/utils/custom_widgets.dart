@@ -22,6 +22,7 @@ class CustomWidget {
   //Used in home page list
   static Widget postListTile(FirebaseAnalyticsObserver observer,
       PostModel postModel, BuildContext context) {
+
     return ListTile(
       onTap: () {
         Navigator.of(context).push(
@@ -62,7 +63,7 @@ class CustomWidget {
                             postModel.publisherName[0]);
                       },
                       errorWidget: (context, url, dynamic) {
-                        //TODO: LOG error
+
                         return _placeholderImageForProfilePicture(
                             postModel.publisherName[0]);
                       },
@@ -98,7 +99,6 @@ class CustomWidget {
           height: 150,
           width: 100,
           errorWidget: (context, url, error) {
-            //TODO: LOG error
             return postModel.imageErrorWidget != null
                 ? postModel.imageErrorWidget!
                 : Image.asset(

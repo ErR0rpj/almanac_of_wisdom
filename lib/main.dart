@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:almanac_of_wisdom/constants/colors.dart';
+import 'package:almanac_of_wisdom/constants/globals.dart';
 import 'package:almanac_of_wisdom/firebase_options.dart';
-import 'package:almanac_of_wisdom/screens/category_page.dart';
 import 'package:almanac_of_wisdom/screens/home_page.dart';
 import 'package:almanac_of_wisdom/screens/profile_page.dart';
 import 'package:almanac_of_wisdom/screens/saved_page.dart';
@@ -20,9 +20,11 @@ void main() async {
 
   //This is for Web view
   if (Platform.isAndroid) {
-    await AndroidInAppWebViewController.setWebContentsDebuggingEnabled(true);
+    await InAppWebViewController.setWebContentsDebuggingEnabled(true);
   }
 
+  await Globals.setGlobals();
+  
   runApp(const MyApp());
 }
 
@@ -62,7 +64,6 @@ class _MyHomePageState extends State<MyHomePage> {
   List<Widget> _bottomNavigationPage() {
     return [
       HomePage(widget.observer),
-      const CategoryPage(),
       const SavedPage(),
       const ProfilePage(),
     ];
