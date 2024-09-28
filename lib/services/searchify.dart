@@ -1,5 +1,4 @@
 //THis is the search algorithm
-//TODO: Optimise this
 import 'package:almanac_of_wisdom/models/post_model.dart';
 import 'package:almanac_of_wisdom/services/string_manipulation.dart';
 import 'package:sortedmap/sortedmap.dart';

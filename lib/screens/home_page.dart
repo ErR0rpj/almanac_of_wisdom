@@ -98,6 +98,7 @@ class _HomePage extends State<HomePage>
           child: SingleChildScrollView(
             controller: _listScrollController,
             child: Container(
+              color: AppColors.primaryColor,
               padding: const EdgeInsets.fromLTRB(15, 30, 15, 0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -179,7 +180,7 @@ class _HomePage extends State<HomePage>
                             borderRadius: BorderRadius.all(
                               Radius.circular(50),
                             ),
-                            color: Color.fromARGB(225, 214, 214, 221),
+                            color: Color.fromARGB(224, 226, 226, 231),
                           ),
                           margin: const EdgeInsets.only(right: 10),
                           padding: const EdgeInsets.only(

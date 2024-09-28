@@ -10,5 +10,6 @@ class AppColors {
   static const Color negativeColor = Colors.black;
   static const Color accentColor = Color(0xFF21529D);
 
-  static const Color textFieldBackgroundColor = Color(0xFFF9F9FB);
+  static const Color textFieldBackgroundColor =
+      Color.fromARGB(255, 255, 255, 255);
 }

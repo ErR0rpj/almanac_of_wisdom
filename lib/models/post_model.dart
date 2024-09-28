@@ -64,8 +64,6 @@ class PostModel {
     this.nextRecommendedPost,
     this.recommendedPost,
   }) {
-    //TODO: Set default image in the UI end
-    //TODO: if image is null then assign a default according to the category
     assignImageErrorWidget();
     _buildSearchKeywords();
   }
